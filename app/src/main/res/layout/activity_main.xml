@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@android:color/white"
+     android:orientation="vertical">
+
+    <ScrollView
+         android:layout_height="0dp"
+         android:layout_width="match_parent"
+         android:padding="16dp"
+         android:layout_weight="1">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:orientation="vertical">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="16dp"
+                 android:textSize="28sp"
+                 android:textColor="@color/black"
+                 android:text="@string/app_name"
+                 android:textStyle="bold" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="16dp"
+                 android:background="@drawable/rounded_white"
+                 android:elevation="4dp"
+                 android:padding="16dp"
+                 android:orientation="vertical">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginBottom="8dp"
+                     android:textSize="16sp"
+                     android:textColor="@color/black"
+                     android:id="@+id/licenseTitle"
+                     android:text="License Expiry"
+                     android:textStyle="bold" />
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:gravity="center"
+                     android:orientation="horizontal">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="18sp"
+                         android:textColor="@color/black"
+                         android:id="@+id/tvD"
+                         android:text="00"
+                         android:textStyle="bold" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:text="d " />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="18sp"
+                         android:textColor="@color/black"
+                         android:layout_marginStart="8dp"
+                         android:id="@+id/tvH"
+                         android:text="00"
+                         android:textStyle="bold" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:text="h " />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="18sp"
+                         android:textColor="@color/black"
+                         android:layout_marginStart="8dp"
+                         android:id="@+id/tvM"
+                         android:text="00"
+                         android:textStyle="bold" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:text="m " />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="18sp"
+                         android:textColor="@color/black"
+                         android:layout_marginStart="8dp"
+                         android:id="@+id/tvS"
+                         android:text="00"
+                         android:textStyle="bold" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:text="s" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:visibility="gone"
+                 android:background="@drawable/rounded_white"
+                 android:elevation="4dp"
+                 android:padding="16dp"
+                 android:orientation="vertical"
+                 android:id="@+id/progressCard">
+
+                <ProgressBar
+                     android:layout_height="20dp"
+                     android:layout_width="match_parent"
+                     android:max="100"
+                     android:indeterminate="false"
+                     android:progressTint="@color/primary"
+                     style="?android:attr/progressBarStyleHorizontal"
+                     android:id="@+id/progressBar" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textSize="14sp"
+                     android:textColor="@color/black"
+                     android:layout_marginTop="8dp"
+                     android:id="@+id/progressText"
+                     android:text="Preparing..." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="12dp"
+                 android:background="@drawable/rounded_white"
+                 android:elevation="4dp"
+                 android:padding="12dp"
+                 android:orientation="horizontal">
+
+                <ImageView
+                     android:layout_height="50dp"
+                     android:layout_width="50dp"
+                     android:src="@drawable/india"
+                     android:contentDescription="BGMI" />
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:orientation="vertical"
+                     android:layout_marginStart="12dp"
+                     android:layout_weight="1">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="16sp"
+                         android:textColor="@color/black"
+                         android:text="BattleGround Mobile India"
+                         android:textStyle="bold" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="12sp"
+                         android:textColor="@color/darker_gray"
+                         android:text="com.pubg.imobile" />
+
+                </LinearLayout>
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:background="@drawable/rounded_button"
+                     android:textAllCaps="false"
+                     android:textColor="@color/white"
+                     android:id="@+id/startBgmi"
+                     android:text="START" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
